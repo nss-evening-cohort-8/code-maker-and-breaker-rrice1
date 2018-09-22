@@ -24,7 +24,7 @@ let secretClick = () => {
     let newString = '';
     let splitSecret = secret.value.split(',');
     for(i=0;i<splitSecret.length;i++){
-        newString += fromCharCode(splitSecret[i]);
+        newString += String.fromCharCode(splitSecret[i]);
         printToDom(newString,'secretToWord')
     }
 }
